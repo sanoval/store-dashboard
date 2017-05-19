@@ -27,7 +27,7 @@ class Master_menu extends Controller
 			$row[] = ($r->deleted==0?'Aktif':'Nonaktif');
 
 			//add html for action
-			$row[] = '<button type="button" class="btn btn-xs btn-danger" title="Hapus" onclick="deleteThis('."'".$r->id."'".')"><i class="fa fa-trash"></i> Delete</button></div>';
+			$row[] = '<button type="button" class="btn btn-xs btn-primary" title="Ubah" onclick="deleteThis('."'".$r->id."'".')"><i class="fa fa-edit"></i> Edit</button></div>';
 
 			$data[] = $row;
 		}

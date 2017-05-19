@@ -33,7 +33,7 @@
                         <th>Parent</th>
                         <th>Class</th>
                         <th>Active</th>
-                        <th></th>
+                        <th>Action</th>
                       </tr>
                     </thead>
                   </table>
@@ -54,7 +54,8 @@
     <script type="text/javascript">
       $(document).ready(function() {
         table = $('#datalist').DataTable({
-          "searching": false,
+          "autoWidth": false,
+          "searching": true,
           "bLengthChange": false,
           "processing": true, //Feature control the processing indicator.
           "serverSide": true, //Feature control DataTables' server-side processing mode.
