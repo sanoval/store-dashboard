@@ -63,7 +63,7 @@
 
           // Load data for the table's content from an Ajax source
           "ajax": {
-            "url": "/public/master_menu/ajax_list",
+            "url": "<?php echo base_url; ?>master_menu/ajax_list",
             "type": "POST"
           },
 
@@ -85,7 +85,7 @@
       function deleteThis(id) {
         if (confirm("Anda yakin?")==true) {
           $.ajax({
-            url: "/public/master_menu/delete/"+id,
+            url: "<?php echo base_url; ?>master_menu/delete/"+id,
             dataType: 'JSON',
             type: 'POST',
             contentType: false,

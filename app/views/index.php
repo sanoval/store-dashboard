@@ -1,7 +1,7 @@
 <?php require_once('header.php'); ?>
 <!-- Include custom css here -->
 	</head>
-	<body class="fixed sidebar-mini skin-black">
+	<body class="fixed sidebar-mini skin-red">
 		<?php require_once('navbar.php'); ?>
 		<?php require_once('sidebar.php'); ?>
 		
